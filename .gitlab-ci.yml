@@ -1,0 +1,79 @@
+stages:
+  - test
+  - build
+  - deploy
+
+image: docker:19
+
+# Pick zero or more services to be used on all builds.
+# Only needed when using a docker container to run your tests in.
+# Check out: http://docs.gitlab.com/ce/ci/docker/using_docker_images.html#what-is-a-service
+# services:
+#   - docker:19-dind
+
+# variables:
+#   DOCKER_TLS_CERTDIR: ""
+
+# This folder is cached between builds
+# http://docs.gitlab.com/ce/ci/yaml/README.html#cache
+# cache:
+
+test:
+  image: node:latest
+  stage: test
+  cache:
+    key:
+      files:
+        - package.json
+        - package-lock.json
+    paths:
+      - node_modules
+  script: 
+    - npm install
+    - npm run test
+  except:
+    - master
+    - tags
+
+build:
+  stage: build
+  script: 
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    - docker build --pull -t $CI_REGISTRY/ulrichdahl/fleet-manager-bot:staging_$CI_COMMIT_SHORT_SHA .
+    - docker run --rm --name fleet-manager-bot-test $CI_REGISTRY/ulrichdahl/fleet-manager-bot:staging_$CI_COMMIT_SHORT_SHA npm run test
+    - docker push $CI_REGISTRY/ulrichdahl/fleet-manager-bot:staging_$CI_COMMIT_SHORT_SHA
+  only:
+    - master
+    - tags
+
+deploy_staging:
+  stage: deploy
+  script:
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    - docker pull $CI_REGISTRY/ulrichdahl/fleet-manager-bot:staging_$CI_COMMIT_SHORT_SHA
+    - docker stop fleet-manager-bot-staging && test 1
+    - docker rm -v fleet-manager-bot-staging && test 1
+    - docker run --name fleet-manager-bot-staging -d -e "VERSION=$CI_COMMIT_SHORT_SHA" -e "DISCORD_TOKEN=$DISCORD_TOKEN" -e "DISCORD_SERVER_ID=$DISCORD_SERVER_ID" -e "FLEET_MANAGER_API_URI=$FLEET_MANAGER_API_URI" $CI_REGISTRY/ulrichdahl/fleet-manager-bot:staging_$CI_COMMIT_SHORT_SHA
+  environment:
+    name: staging
+    url: https://staging-fleet-manager.ulrichdahl.dk
+  only:
+    - master
+
+deploy_production:
+  stage: deploy
+  script:
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    - docker pull $CI_REGISTRY/ulrichdahl/fleet-manager-bot:staging_$CI_COMMIT_SHORT_SHA
+    - docker tag $CI_REGISTRY/ulrichdahl/fleet-manager-bot:staging_$CI_COMMIT_SHORT_SHA $CI_REGISTRY/ulrichdahl/fleet-manager-bot:$CI_COMMIT_REF_NAME
+    - docker push $CI_REGISTRY/ulrichdahl/fleet-manager-bot:$CI_COMMIT_REF_NAME
+    - docker tag $CI_REGISTRY/ulrichdahl/fleet-manager-bot:$CI_COMMIT_REF_NAME $CI_REGISTRY/ulrichdahl/fleet-manager-bot:latest
+    - docker push $CI_REGISTRY/ulrichdahl/fleet-manager-bot:latest
+    - docker stop fleet-manager-bot && test 1
+    - docker rm -v fleet-manager-bot && test 1
+    - docker run --name fleet-manager-bot -d -e "VERSION=$CI_COMMIT_REF_NAME" -e "DISCORD_TOKEN=$DISCORD_TOKEN" -e "DISCORD_SERVER_ID=$DISCORD_SERVER_ID" -e "FLEET_MANAGER_API_URI=$FLEET_MANAGER_API_URI" $CI_REGISTRY/ulrichdahl/fleet-manager-bot:latest
+  environment:
+    name: production
+    url: https://fleet-manager.ulrichdahl.dk
+  only:
+    - tags

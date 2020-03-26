@@ -1,0 +1,734 @@
+[
+    {
+        "manufacturer": "Aegis Dynamics",
+        "vehicles": [
+            {
+                "id": 1,
+                "name": "Avenger Stalker"
+            },
+            {
+                "id": 2,
+                "name": "Avenger Titan"
+            },
+            {
+                "id": 3,
+                "name": "Avenger Titan Renegade"
+            },
+            {
+                "id": 4,
+                "name": "Avenger Warlock"
+            },
+            {
+                "id": 5,
+                "name": "Eclipse"
+            },
+            {
+                "id": 6,
+                "name": "Gladius"
+            },
+            {
+                "id": 7,
+                "name": "Gladius Valiant"
+            },
+            {
+                "id": 8,
+                "name": "Hammerhead"
+            },
+            {
+                "id": 9,
+                "name": "Hammerhead Best in Show Edition"
+            },
+            {
+                "id": 10,
+                "name": "Idris-M"
+            },
+            {
+                "id": 11,
+                "name": "Idris-P"
+            },
+            {
+                "id": 12,
+                "name": "Javelin"
+            },
+            {
+                "id": 13,
+                "name": "Nautilus"
+            },
+            {
+                "id": 14,
+                "name": "Nautilus Solstice Edition"
+            },
+            {
+                "id": 15,
+                "name": "Pirate Gladius"
+            },
+            {
+                "id": 16,
+                "name": "Reclaimer"
+            },
+            {
+                "id": 17,
+                "name": "Reclaimer Best in Show Edition"
+            },
+            {
+                "id": 18,
+                "name": "Redeemer"
+            },
+            {
+                "id": 19,
+                "name": "Retaliator Base"
+            },
+            {
+                "id": 20,
+                "name": "Retaliator Bomber"
+            },
+            {
+                "id": 21,
+                "name": "Sabre"
+            },
+            {
+                "id": 22,
+                "name": "Sabre Comet"
+            },
+            {
+                "id": 23,
+                "name": "Sabre Raven"
+            },
+            {
+                "id": 24,
+                "name": "Vanguard Harbinger"
+            },
+            {
+                "id": 25,
+                "name": "Vanguard Hoplite"
+            },
+            {
+                "id": 26,
+                "name": "Vanguard Sentinel"
+            },
+            {
+                "id": 27,
+                "name": "Vanguard Warden"
+            },
+            {
+                "id": 28,
+                "name": "Vulcan"
+            }
+        ]
+    },
+    {
+        "manufacturer": "Anvil Aurospace",
+        "vehicles": [
+            {
+                "id": 29,
+                "name": "Arrow"
+            },
+            {
+                "id": 30,
+                "name": "Ballista"
+            },
+            {
+                "id": 31,
+                "name": "Ballista Dunestalker"
+            },
+            {
+                "id": 32,
+                "name": "Ballista Snowblind"
+            },
+            {
+                "id": 33,
+                "name": "C8 Pisces"
+            },
+            {
+                "id": 34,
+                "name": "C8 Pisces"
+            },
+            {
+                "id": 35,
+                "name": "C8X Pisces Expedition"
+            },
+            {
+                "id": 36,
+                "name": "Carrack"
+            },
+            {
+                "id": 37,
+                "name": "Carrack Expediton"
+            },
+            {
+                "id": 38,
+                "name": "Crucible"
+            },
+            {
+                "id": 39,
+                "name": "F7C Hornet"
+            },
+            {
+                "id": 40,
+                "name": "F7C Hornet Wildfire"
+            },
+            {
+                "id": 41,
+                "name": "F7C-M Hornet Heartseeker"
+            },
+            {
+                "id": 42,
+                "name": "F7C-M Super Hornet"
+            },
+            {
+                "id": 43,
+                "name": "F7C-R Hornet Tracker"
+            },
+            {
+                "id": 44,
+                "name": "F7C-S Hornet Ghost"
+            },
+            {
+                "id": 45,
+                "name": "F8C Lightning"
+            },
+            {
+                "id": 46,
+                "name": "F8C Lightning Executive Edition"
+            },
+            {
+                "id": 47,
+                "name": "Gladiator"
+            },
+            {
+                "id": 48,
+                "name": "Hawk"
+            },
+            {
+                "id": 49,
+                "name": "Hurricane"
+            },
+            {
+                "id": 50,
+                "name": "Terrapin"
+            },
+            {
+                "id": 51,
+                "name": "Valkyrie"
+            },
+            {
+                "id": 52,
+                "name": "Valkyrie Liberator"
+            }
+        ]
+    },
+    {
+        "manufacturer": "Aopoa",
+        "vehicles": [
+            {
+                "id": 53,
+                "name": "Khartu-al"
+            },
+            {
+                "id": 54,
+                "name": "Nox"
+            },
+            {
+                "id": 55,
+                "name": "Nox Kue"
+            },
+            {
+                "id": 56,
+                "name": "San'tok.yāi"
+            }
+        ]
+    },
+    {
+        "manufacturer": "Argo Astronautics",
+        "vehicles": [
+            {
+                "id": 57,
+                "name": "Mole"
+            },
+            {
+                "id": 58,
+                "name": "Mole Carbon Edition"
+            },
+            {
+                "id": 59,
+                "name": "Mole Talus Edition"
+            },
+            {
+                "id": 60,
+                "name": "MPUV-1C"
+            },
+            {
+                "id": 61,
+                "name": "MPUV-1P"
+            },
+            {
+                "id": 62,
+                "name": "SRV"
+            }
+        ]
+    },
+    {
+        "manufacturer": "Banu",
+        "vehicles": [
+            {
+                "id": 63,
+                "name": "Defender"
+            },
+            {
+                "id": 64,
+                "name": "Merchantman"
+            }
+        ]
+    },
+    {
+        "manufacturer": "Consolidated Outland",
+        "vehicles": [
+            {
+                "id": 65,
+                "name": "Mustang Alpha"
+            },
+            {
+                "id": 66,
+                "name": "Mustang Alpha Vindicator"
+            },
+            {
+                "id": 67,
+                "name": "Mustang Beta"
+            },
+            {
+                "id": 68,
+                "name": "Mustang Delta"
+            },
+            {
+                "id": 69,
+                "name": "Mustang Gamma"
+            },
+            {
+                "id": 70,
+                "name": "Mustang Omega"
+            },
+            {
+                "id": 71,
+                "name": "Pioneer"
+            }
+        ]
+    },
+    {
+        "manufacturer": "Crusader Industries",
+        "vehicles": [
+            {
+                "id": 72,
+                "name": "Ares Inferno"
+            },
+            {
+                "id": 73,
+                "name": "Ares Ion"
+            },
+            {
+                "id": 74,
+                "name": "Genesis"
+            },
+            {
+                "id": 75,
+                "name": "Hercules Starlifter A2"
+            },
+            {
+                "id": 76,
+                "name": "Hercules Starlifter C2"
+            },
+            {
+                "id": 77,
+                "name": "Hercules Starlifter M2"
+            },
+            {
+                "id": 78,
+                "name": "Mercury Star Runner"
+            }
+        ]
+    },
+    {
+        "manufacturer": "Drake Interplanetary",
+        "vehicles": [
+            {
+                "id": 79,
+                "name": "Buccaneer"
+            },
+            {
+                "id": 80,
+                "name": "Caterpillar"
+            },
+            {
+                "id": 81,
+                "name": "Caterpillar Best in Show Edition"
+            },
+            {
+                "id": 82,
+                "name": "Caterpillar Pirate Edition"
+            },
+            {
+                "id": 83,
+                "name": "Corsair"
+            },
+            {
+                "id": 84,
+                "name": "Cutlass Black"
+            },
+            {
+                "id": 85,
+                "name": "Cutlass Black Best in Show Edition"
+            },
+            {
+                "id": 86,
+                "name": "Cutlass Blue"
+            },
+            {
+                "id": 87,
+                "name": "Cutlass Red"
+            },
+            {
+                "id": 88,
+                "name": "Dragonfly Black"
+            },
+            {
+                "id": 89,
+                "name": "Dragonfly Yellowjacket"
+            },
+            {
+                "id": 90,
+                "name": "Herald"
+            },
+            {
+                "id": 91,
+                "name": "Kraken"
+            },
+            {
+                "id": 92,
+                "name": "Kraken Privateer"
+            },
+            {
+                "id": 93,
+                "name": "Star Kitten Pink Dragonfly"
+            },
+            {
+                "id": 94,
+                "name": "Vulture"
+            }
+        ]
+    },
+    {
+        "manufacturer": "Esperia",
+        "vehicles": [
+            {
+                "id": 95,
+                "name": "Blade"
+            },
+            {
+                "id": 96,
+                "name": "Glaive"
+            },
+            {
+                "id": 97,
+                "name": "Prowler"
+            }
+        ]
+    },
+    {
+        "manufacturer": "Greycat IndustriaL",
+        "vehicles": [
+            {
+                "id": 98,
+                "name": "Greycat PTV"
+            }
+        ]
+    },
+    {
+        "manufacturer": "Kruger Intergalactic",
+        "vehicles": [
+            {
+                "id": 99,
+                "name": "P-52 Merlin"
+            },
+            {
+                "id": 100,
+                "name": "P-72 Archimedes"
+            }
+        ]
+    },
+    {
+        "manufacturer": "Musashi Industrial & Starflight Concern",
+        "vehicles": [
+            {
+                "id": 101,
+                "name": "Endeavor"
+            },
+            {
+                "id": 102,
+                "name": "Freelancer"
+            },
+            {
+                "id": 103,
+                "name": "Freelancer DUR"
+            },
+            {
+                "id": 104,
+                "name": "Freelancer MAX"
+            },
+            {
+                "id": 105,
+                "name": "Freelancer MIS"
+            },
+            {
+                "id": 106,
+                "name": "Hull A"
+            },
+            {
+                "id": 107,
+                "name": "Hull B"
+            },
+            {
+                "id": 108,
+                "name": "Hull C"
+            },
+            {
+                "id": 109,
+                "name": "Hull D"
+            },
+            {
+                "id": 110,
+                "name": "Hull E"
+            },
+            {
+                "id": 111,
+                "name": "Prospector"
+            },
+            {
+                "id": 112,
+                "name": "Razor"
+            },
+            {
+                "id": 113,
+                "name": "Razor EX"
+            },
+            {
+                "id": 114,
+                "name": "Razor LX"
+            },
+            {
+                "id": 115,
+                "name": "Reliant Kore"
+            },
+            {
+                "id": 116,
+                "name": "Reliant Mako"
+            },
+            {
+                "id": 117,
+                "name": "Reliant Sen"
+            },
+            {
+                "id": 118,
+                "name": "Reliant Tana"
+            },
+            {
+                "id": 119,
+                "name": "Starfarer"
+            },
+            {
+                "id": 120,
+                "name": "Starfarer Gemini"
+            }
+        ]
+    },
+    {
+        "manufacturer": "Origin Jumpworks GmbH",
+        "vehicles": [
+            {
+                "id": 121,
+                "name": "100i"
+            },
+            {
+                "id": 122,
+                "name": "125a"
+            },
+            {
+                "id": 123,
+                "name": "135c"
+            },
+            {
+                "id": 124,
+                "name": "300i"
+            },
+            {
+                "id": 125,
+                "name": "315p"
+            },
+            {
+                "id": 126,
+                "name": "325a"
+            },
+            {
+                "id": 127,
+                "name": "350r"
+            },
+            {
+                "id": 128,
+                "name": "600i Executive Edition"
+            },
+            {
+                "id": 129,
+                "name": "600i Explorer"
+            },
+            {
+                "id": 130,
+                "name": "600i Touring"
+            },
+            {
+                "id": 131,
+                "name": "85X"
+            },
+            {
+                "id": 132,
+                "name": "890 Jump"
+            },
+            {
+                "id": 133,
+                "name": "M50"
+            },
+            {
+                "id": 134,
+                "name": "X1 Base"
+            },
+            {
+                "id": 135,
+                "name": "X1 Force"
+            },
+            {
+                "id": 136,
+                "name": "X1 Velocity"
+            }
+        ]
+    },
+    {
+        "manufacturer": "Roberts Space Industries",
+        "vehicles": [
+            {
+                "id": 137,
+                "name": "Apollo Medivac"
+            },
+            {
+                "id": 138,
+                "name": "Apollo Triage"
+            },
+            {
+                "id": 139,
+                "name": "Aurora CL"
+            },
+            {
+                "id": 140,
+                "name": "Aurora ES"
+            },
+            {
+                "id": 141,
+                "name": "Aurora LN"
+            },
+            {
+                "id": 142,
+                "name": "Aurora LX"
+            },
+            {
+                "id": 143,
+                "name": "Aurora MR"
+            },
+            {
+                "id": 144,
+                "name": "Constellation Andromeda"
+            },
+            {
+                "id": 145,
+                "name": "Constellation Aquila"
+            },
+            {
+                "id": 146,
+                "name": "Constellation Phoenix"
+            },
+            {
+                "id": 147,
+                "name": "Constellation Phoenix Emerald"
+            },
+            {
+                "id": 148,
+                "name": "Constellation Taurus"
+            },
+            {
+                "id": 149,
+                "name": "Mantis"
+            },
+            {
+                "id": 150,
+                "name": "Orion"
+            },
+            {
+                "id": 151,
+                "name": "Polaris"
+            },
+            {
+                "id": 152,
+                "name": "Ursa Rover"
+            },
+            {
+                "id": 153,
+                "name": "Ursa Rover Fortuna"
+            }
+        ]
+    },
+    {
+        "manufacturer": "Tumbril Land Systems",
+        "vehicles": [
+            {
+                "id": 154,
+                "name": "Cyclone"
+            },
+            {
+                "id": 155,
+                "name": "Cyclone-RC"
+            },
+            {
+                "id": 156,
+                "name": "Cyclone-RN"
+            },
+            {
+                "id": 157,
+                "name": "Cyclone-TR"
+            },
+            {
+                "id": 158,
+                "name": "Cyclone-AA"
+            },
+            {
+                "id": 159,
+                "name": "Nova Tank"
+            },
+            {
+                "id": 160,
+                "name": "Ranger CV"
+            },
+            {
+                "id": 161,
+                "name": "Ranger RC"
+            },
+            {
+                "id": 162,
+                "name": "Ranger TR"
+            }
+        ]
+    },
+    {
+        "manufacturer": "Vanduul",
+        "vehicles": [
+            {
+                "id": 163,
+                "name": "Scythe"
+            }
+        ]
+    }
+]

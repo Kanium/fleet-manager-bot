@@ -1,20 +1,32 @@
-module.exports = {
-	name: 'users',
-	description: 'Show what servers the bot is connected to.',
-    onlyAdmins: true,
-    guildOnly: true,
-    args: 0,
-    usage: '',
+const Discord = require('discord.js');
+const BaseCommand = require('./../lib/command');
+const request = require('./../lib/requests');
 
-	execute(message) {
-        // find
-		const embed = new this.Discord.MessageEmbed();
-        embed.setTitle('Current users registered in '+message.guild.name);
-        embed.addField('1: Kaptajnen[KaptajnDahl]', '5 ships', true);
-        embed.addField('2: ImpKeeper', '82 ships', true);
-        embed.addField('3: [ᑌᖴᗪ] ᔕᑭᗩᑕEY', '28 ships', true);
-        embed.addField('4: Scottio', '19 ships', true);
-        embed.setFooter('Total ships in org fleet: '+87);
-        message.author.send(embed);
-	},
+class Command extends BaseCommand {
+
+    constructor() {
+        super();
+        this.name = 'users';
+        this.description = 'Show the users of the org that are registered with fleet manager';
+        this.requireRole = 'admin';
+    }
+
+    execute(message) {
+        let _guild = this.guild;
+        request.get('users/' + _guild.id, (json) => {
+            const embed = new Discord.MessageEmbed();
+            embed.setTitle('Current users registered in ' + _guild.name);
+            let ships = 0;
+            json.users.forEach((user, i) => {
+                embed.addField((i + 1) + ': ' + user.settings.userName, user.numberOfShips + ' ships', true);
+                ships += user.numberOfShips;
+            });
+            embed.setFooter('Total ships in org fleet: ' + ships);
+            message.author.send(embed);
+        }, undefined, (err) => {
+            message.reply('sorry, but the deregistration failed to complete.');
+        });
+    }
 };
+
+module.exports = new Command();

@@ -1,0 +1,9 @@
+FROM node:alpine
+
+WORKDIR /opt/
+
+RUN npm install -g nodemon
+
+ENV VERSION=development
+
+CMD [ "nodemon", "index.js" ]
