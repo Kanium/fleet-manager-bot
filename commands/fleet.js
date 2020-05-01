@@ -148,7 +148,7 @@ class Command extends BaseCommand {
     list(message, args) {
         request.get('gear-groups/' + args[1] + (args[2] === 'sale' ? '/sale' : ''),
             (json) => {
-                console.log(json);
+                log(json);
                 const embed = new Discord.MessageEmbed()
                     .setTitle((args[1] === 'mine' ? 'Your' : 'Organization') + ' fleet overview')
                     .setColor(0xFF0000)
@@ -185,7 +185,7 @@ class Command extends BaseCommand {
                         contains: e.data.values.shipType,
                         imageUri: e.data.values.image,
                     };
-                    console.log(data);
+                    log(data);
                     request.post('gear-groups', data, d => {
                         message.reply('your gear group was succesfully saved!');
                     }, e => {
